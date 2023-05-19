@@ -243,12 +243,7 @@ class _MovieFormState extends State<MovieForm> {
         int quantity = _quantity;
         int total = price * _quantity;
 
-        print("Movie: " + _movie);
-        print("Gender: " + gender);
-        print("Quantity: " + _quantity.toString());
-
-        print("total = RM" + total.toString());
-        print("Termschecked " + _termsChecked.toString());
+        
         ScaffoldMessenger.of(context)
             .showSnackBar(const SnackBar(content: Text('Form Submitted')));
 
